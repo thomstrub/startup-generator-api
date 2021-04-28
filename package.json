@@ -1,0 +1,22 @@
+{
+  "name": "startup-generator-api",
+  "version": "1.0.0",
+  "description": "API for your new startup idea",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thomstrub/startup-generator-api.git"
+  },
+  "keywords": [
+    "disrupt"
+  ],
+  "author": "Thom Strub",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thomstrub/startup-generator-api/issues"
+  },
+  "homepage": "https://github.com/thomstrub/startup-generator-api#readme"
+}
