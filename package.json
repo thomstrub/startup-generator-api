@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/thomstrub/startup-generator-api/issues"
   },
-  "homepage": "https://github.com/thomstrub/startup-generator-api#readme"
+  "homepage": "https://github.com/thomstrub/startup-generator-api#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
