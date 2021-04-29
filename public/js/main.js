@@ -14,14 +14,16 @@ function initialize(){
     /*----- event listeners -----*/
     console.log(randomButtonElem, "button firing");
     randomButtonElem.addEventListener('click', randomButtonEvent);
-    render();
+    
 }
 
 /*------------------------------ render and render helper functions ----------------------------*/
 
 function render(){
+    resultElem.innerHTML = '';
     let result = document.createElement('h3');
-    result.textContent = "idea created";
+    let num = Math.floor(Math.random() * 33);
+    result.textContent = "idea created " + num;
     resultElem.appendChild(result);
 }
 

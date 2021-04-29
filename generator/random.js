@@ -20,7 +20,7 @@ const constants = {
             "labor", "music", "blog", "manufacturing", "pet insurance", "insurance",
             "public sector", "construction", "entertainment", "luxury travel",
             "food delivery", "grocery delivery", "cannibis", "subscription", "well-being",
-            "mental health", 
+            "mental health", "fitness"
             ],
     nouns: [
             "middleman", "industry", "concept", "sector", "workforce"
@@ -32,7 +32,7 @@ const constants = {
             "a proprietary", "an innovative", "a curated", "a reinforced", 
             "an exclusive", "a revolutionary", "a modern", "a coaching",
             "a video-first", "a review-based", "a cloud-based", "a cloud computing", 
-            "a blockchain"
+            "a blockchain", "a personal coaching"
             ],
     systems: [
             "system", "platform", "convergence", "paradigm shift", "strategy", "network",
