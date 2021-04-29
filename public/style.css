@@ -25,3 +25,8 @@ body {
       font-size: large;
       border: 6px solid rgb(248, 108, 92);
   }
+  
+  img{
+      display: flex;
+      margin: 10vw auto;
+  }
