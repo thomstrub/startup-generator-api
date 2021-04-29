@@ -1,5 +1,5 @@
 // const { random } = require("../../controllers/api");
-
+import * as randomAPI from '../utils/randomApiService'
 
 
 /*----- app's state (variables) -----*/
@@ -20,6 +20,7 @@ function initialize(){
 /*------------------------------ render and render helper functions ----------------------------*/
 
 function render(){
+    randomAPIcall();
     resultElem.innerHTML = '';
     let result = document.createElement('h3');
     let num = Math.floor(Math.random() * 33);
@@ -27,6 +28,10 @@ function render(){
     resultElem.appendChild(result);
 }
 
+async function randomAPIcall(){
+    const data = await randomAPI.getRandomIdea()
+    console.log(data, "API Call <----");
+}
 
 /*------------------------------ controller functions ----------------------------*/
 
