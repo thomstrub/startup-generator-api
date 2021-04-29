@@ -30,3 +30,10 @@ body {
       display: flex;
       margin: 10vw auto;
   }
+
+  #result{
+      border: 5px solid salmon;
+      margin: 5vw auto;
+      width: 50vw;
+      height: 20vw;
+  }
