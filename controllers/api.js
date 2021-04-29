@@ -2,8 +2,8 @@ module.exports = {
     random
 }
 
-const idea = "Test idea";
+const randomGenerator = require('../generator/random')
 
 function random(req, res, next) {
-    res.json({"idea": idea});
+    res.json(randomGenerator.returnJson());
 }
