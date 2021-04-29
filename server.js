@@ -9,7 +9,7 @@ const app = express();
 
 // Routes
 app.get('/', function (req, res) {
-    res.send('<h1>Get out your checkbooks!</h1>');
+    res.sendFile(__dirname + '/views/index.html');
 })
 
 app.listen(3000, function() {
