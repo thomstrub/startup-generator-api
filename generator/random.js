@@ -29,20 +29,31 @@ const constants = {
 }
 
 class Idea {
-    constructor(constants){
-        this.verb = constants.verbs[Math.floor(Math.random() * constants.verbs.length)]
-        this.sector = constants.verbs[Math.floor(Math.random() * constants.verbs.length)]
-        this.noun = 
-        this.preposition =
-        this.adjective = 
-        this.system =
+    constructor(constantArr){
+        this.verb = this.randomize(constantArr.verbs);
+        this.sector = this.randomize(constantArr.sectors);
+        this.noun =  this.randomize(constantArr.nouns);
+        this.preposition = this.randomize(constantArr.prepositions);
+        this.adjective = this.randomize(constantArr.adjectives);
+        this.system = this.randomize(constantArr.systems);
     }
-    
+    randomize(constant) {
+       return constant[Math.floor(Math.random() * constant.length)]
+    }
+    generate(){
+        let idea = [];
+        for(const [key, value] of Object.entries(this)){
+            idea.push(value);
+        }
+        return idea.join(" ");
+    }
     
 }
 
 function returnJson(){
+    const newIdea = new Idea(constants);
+    console.log(newIdea);
     return(
-        {"message": "test idea from random.js"}
+        {"idea": newIdea.generate() + "."}
     )
 }
