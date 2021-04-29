@@ -2,36 +2,48 @@ module.exports = {
     returnJson
 }
 
+/* DELETED WORDS
+
+HACK, "an agile", "a lean",
+
+*/
+
 const constants = {
-    verbs: [
-        "Disrupt", "Curate", "Destroy", "Gamify", "Revolutionize", "Monetize",
-        "Create", "Prioritize", "Redefine", "Innovate", "Re-imagine", "Ideate",
-        "Re-disrupt", "Uber for", "Airbnb for", "Netflix for", "Craft", "Hack",
-        "Shift"
-        ],
-    sectors: [
+    verbs:  [
+            "Disrupt", "Curate", "Destroy", "Gamify", "Revolutionize", "Monetize",
+            "Create", "Prioritize", "Redefine", "Innovate", "Re-imagine", "Ideate",
+            "Re-disrupt", "Uber for", "Airbnb for", "Netflix for", "Craft", "Shift" 
+            ],
+    sectors:[
             "education", "health", "prison", "transportation", "cryptocurrency",
-            "housing", "real-estate", "grocery", "delivery", "shopping", "work",
-            "labor", "music", "blog"
+            "housing", "real estate", "grocery", "delivery", "shopping", "work",
+            "labor", "music", "blog", "manufacturing", "pet insurance", "insurance",
+            "public sector", "construction", "entertainment", "luxury travel",
+            "food delivery", "grocery delivery", "cannibis", "subscription", "well-being",
+            "mental health", 
             ],
     nouns: [
-            "middleman", "industry", "concept", "process", "development"
-          ],
+            "middleman", "industry", "concept", "sector", "workforce"
+           ],
     prepositions: [
-                    "with", "through", "by", "via"
-                ],
+            "with", "through", "via"
+            ],
     adjectives: [
-                "proprietary", "innovative", "lean", "curated", "reinforced"
-               ],
+            "a proprietary", "an innovative", "a curated", "a reinforced", 
+            "an exclusive", "a revolutionary", "a modern", "a coaching",
+            "a video-first", "a review-based", "a cloud-based", "a cloud computing", 
+            "a blockchain"
+            ],
     systems: [
-              "system", "platform", "convergence", "paradigm shift", "strategy", "investment"
+            "system", "platform", "convergence", "paradigm shift", "strategy", "network",
+            "framework", "scheme", "approach", "plan"
             ]
 }
 
 class Idea {
     constructor(constantArr){
         this.verb = this.randomize(constantArr.verbs);
-        this.sector = this.randomize(constantArr.sectors);
+        this.sector = "the " + this.randomize(constantArr.sectors);
         this.noun =  this.randomize(constantArr.nouns);
         this.preposition = this.randomize(constantArr.prepositions);
         this.adjective = this.randomize(constantArr.adjectives);

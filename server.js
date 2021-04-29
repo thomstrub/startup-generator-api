@@ -10,6 +10,7 @@ const apiRoutes = require('./routes/api');
 
 app.use("/public", express.static(__dirname + "/public"));
 
+
 // Routes
 
 app.use('/api', apiRoutes);
