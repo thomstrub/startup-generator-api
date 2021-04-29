@@ -7,6 +7,8 @@ const app = express();
 
 // Middleware
 
+app.use("/public", express.static(__dirname + "/public"));
+
 // Routes
 app.get('/', function (req, res) {
     res.sendFile(__dirname + '/views/index.html');
