@@ -4,14 +4,14 @@ module.exports = {
 
 /* DELETED WORDS
 
-HACK, "an agile", "a lean",
+HACK, "an agile", "a lean", "Curate", "Ideate",
 
 */
 
 const constants = {
     verbs:  [
-            "Disrupt", "Curate", "Destroy", "Gamify", "Revolutionize", "Monetize",
-            "Create", "Prioritize", "Redefine", "Innovate", "Re-imagine", "Ideate",
+            "Disrupt",  "Destroy", "Gamify", "Revolutionize", "Monetize",
+            "Create", "Prioritize", "Redefine", "Innovate", "Re-imagine", 
             "Re-disrupt", "Uber for", "Airbnb for", "Netflix for", "Craft", "Shift" 
             ],
     sectors:[
