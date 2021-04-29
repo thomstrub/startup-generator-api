@@ -8,8 +8,13 @@ body {
   h1 {
     font-size: 4em;
   }
+
+  h3 {
+      margin: 3vw auto;
+  }
+
   button {
-      margin-top: 20vw;
+      margin-top: 5vw;
       width: 20vw;
       height: 8vw;
       border-radius: 10px;
@@ -33,7 +38,9 @@ body {
 
   #result{
       border: 5px solid salmon;
+      border-radius: 8px;
       margin: 5vw auto;
       width: 50vw;
       height: 20vw;
+      padding: 10px auto;
   }
