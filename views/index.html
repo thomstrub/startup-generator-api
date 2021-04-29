@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Startup Generator</title>
     <link rel="stylesheet" href="/public/style.css">
-    <script defer src="/public/js/main.js"></script>
+    <script defer src="/public/js/main.js" type="text/javascript"></script>
 </head>
 <body>
     <h1>Do U wanT sUm C'd $MONEY$??</h1>
@@ -17,4 +17,42 @@
 
     <img src='../public/images/Bill-Gates-Devil.gif' alt="Bill">
 </body>
+<!-- <script type="text/javascript">
+
+    
+
+    /*----- app's state (variables) -----*/
+
+    /*----- cached element references -----*/
+    const randomButtonElem = document.getElementById('random-button');
+    const resultElem = document.getElementById('result');
+    /*----- init function -----*/
+
+    initialize();
+
+    function initialize(){
+        /*----- event listeners -----*/
+        
+        randomButtonElem.addEventListener('click', randomButtonEvent);
+        render();
+    }
+
+    /*------------------------------ render and render helper functions ----------------------------*/
+
+    function render(){
+        let result = document.createElement('h3');
+        result.textContent = "idea created";
+        resultElem.appendChild(result);
+    }
+
+
+    /*------------------------------ controller functions ----------------------------*/
+
+    function randomButtonEvent(e){
+        console.log("button firing");
+        e.preventDefault();
+        render();
+    }
+
+</script> -->
 </html>

@@ -1,14 +1,15 @@
-const { random } = require("../../controllers/api");
+// const { random } = require("../../controllers/api");
 
-initialize();
+
 
 /*----- app's state (variables) -----*/
 
 /*----- cached element references -----*/
 const randomButtonElem = document.getElementById('random-button');
 const resultElem = document.getElementById('result');
-/*----- init function -----*/
 
+/*----- init function -----*/
+initialize();
 function initialize(){
     /*----- event listeners -----*/
     console.log(randomButtonElem, "button firing");
