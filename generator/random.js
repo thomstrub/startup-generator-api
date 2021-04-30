@@ -4,39 +4,50 @@ module.exports = {
 
 /* DELETED WORDS
 
-HACK, "an agile", "a lean", "Curate", "Ideate", "Craft", "Create",
+HACK, "an agile", "a lean", "Curate", "Ideate", "Craft", "Create", "Prioritize",
 
 */
 
 const constants = {
     verbs:  [
             "Disrupt",  "Destroy", "Gamify", "Revolutionize", "Monetize",
-             "Prioritize", "Redefine", "Innovate", "Re-imagine", 
-            "Re-disrupt", "Uber for", "Airbnb for", "Netflix for", "Shift" 
+              "Redefine", "Innovate", "Re-imagine", "Go beyond", "Increase sales for",
+            "Re-disrupt", "Uber for", "Airbnb for", "Netflix for", "Shift", 
+            "Engage profits for", "Improve marketing effectiveness for" 
             ],
     sectors:[
             "education", "health", "prison", "transportation", "cryptocurrency",
             "housing", "real estate", "grocery", "delivery", "shopping", "work",
             "labor", "music", "blog", "manufacturing", "pet insurance", "insurance",
-            "public sector", "construction", "entertainment", "luxury travel",
+            "public", "construction", "entertainment", "luxury travel", "healthcare",
             "food delivery", "grocery delivery", "cannibis", "subscription", "well-being",
-            "mental health", "fitness"
+            "mental health", "fitness", "home security", "energy", "perscription drug",
+            "Millenial", "Gen Y", "Gen Z", "Baby Boomer", "skin care", "automotive",
+            "health insurance", "home insurance", "life insurance"
             ],
     nouns: [
-            "middleman", "industry", "concept", "sector", "workforce"
+            "middleman", "industry", "sector", "workforce", "network", "marketplace"
            ],
     prepositions: [
             "with", "through", "via"
             ],
     adjectives: [
-            "a proprietary", "an innovative", "a curated", "a reinforced", 
-            "an exclusive", "a revolutionary", "a modern", "a coaching",
-            "a video-first", "a review-based", "a cloud-based", "a cloud computing", 
-            "a blockchain", "a personal coaching"
+            "a proprietary", "an innovative", "a curated", "a reinforced", "a carbon neutral",
+            "an exclusive", "a revolutionary", "a modern", "a coaching", "a remote-first",
+            "a video-first", "a review-based", "a cloud-based",
+            "a blockchain", "an on-demand", "a universal", "an easy to use", "an at-home",
+            "a personalized", "a transparent", "an authentic", 
+            ],
+    solutions: [
+            "personal coaching", "computing", "food delivery", "third-party", "therapy",
+            "IoT", "B2B", "blogging", "vlogging", "unprecedented", "social commerce", "fitness",
+            "customer engagement", "Millenial focused", "video sharing", "generic",
+            "customer collaboration", "AI", "team collaboration", "sleep meditation"
             ],
     systems: [
-            "system", "platform", "convergence", "paradigm shift", "strategy", "network",
-            "framework", "scheme", "approach", "plan"
+            "system", "digital platform", "framework", "platform", 
+            "paradigm shift", "strategy", "network", "schema", "provider",
+            "framework", "scheme", "approach", "plan", "customer experience", "digital library"
             ]
 }
 
@@ -47,6 +58,7 @@ class Idea {
         this.noun =  this.randomize(constantArr.nouns);
         this.preposition = this.randomize(constantArr.prepositions);
         this.adjective = this.randomize(constantArr.adjectives);
+        this.solution = this.randomize(constantArr.solutions);
         this.system = this.randomize(constantArr.systems);
     }
     randomize(constant) {

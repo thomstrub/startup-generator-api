@@ -1,5 +1,6 @@
 {
   "name": "startup-generator-api",
+  
   "version": "1.0.0",
   "description": "API for your new startup idea",
   "main": "server.js",
@@ -13,7 +14,7 @@
   "keywords": [
     "disrupt"
   ],
-  "author": "Thom Strub",
+  "author": "Thom and Tara",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/thomstrub/startup-generator-api/issues"
