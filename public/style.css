@@ -52,3 +52,17 @@ body {
       color: salmon;
       margin: 100px auto;
   }
+
+  @media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    button{
+        width: 35vw;
+         height: 20vw;
+    }
+    #result{
+        width: 60vw;
+        height: 40vw;
+    }
+}
