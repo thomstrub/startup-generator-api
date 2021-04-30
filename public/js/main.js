@@ -23,7 +23,7 @@ async function render(){
     const idea = data["idea"];
     console.log(data["idea"], "data")
     resultElem.innerHTML = '';
-    let result = document.createElement('h2');
+    let result = document.createElement('h3');
     result.textContent = idea;
     resultElem.appendChild(result);
 }
