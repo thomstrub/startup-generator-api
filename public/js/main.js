@@ -24,6 +24,7 @@ async function render(){
     console.log(data["idea"], "data")
     resultElem.innerHTML = '';
     let result = document.createElement('h3');
+    result.setAttribute('class', "idea");
     result.textContent = idea;
     resultElem.appendChild(result);
 }

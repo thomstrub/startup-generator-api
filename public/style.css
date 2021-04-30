@@ -15,8 +15,8 @@ body {
 
   button {
       margin-top: 5vw;
-      width: 20vw;
-      height: 8vw;
+      width: 30vw;
+      height: 12vw;
       border-radius: 10px;
       border: 5px solid salmon;
       font-size: medium;
@@ -37,10 +37,18 @@ body {
   }
 
   #result{
+      display: flex;
+      align-items: center;
       border: 5px solid salmon;
       border-radius: 8px;
       margin: 5vw auto;
       width: 50vw;
-      height: 20vw;
+      height: 30vw;
       padding: 10px auto;
+  }
+
+  .idea {
+      
+      color: salmon;
+      margin: 100px auto;
   }
